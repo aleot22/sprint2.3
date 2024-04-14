@@ -1,7 +1,6 @@
-import memoize from '../memoize'; // Asegúrate de importar la función memoize desde el archivo donde está definida
+import memoize from '../memoize'; 
 
 describe('memoize', () => {
-  // Test para verificar que la función devuelve el mismo resultado para los mismos argumentos
   test('devuelve el mismo resultado para los mismos argumentos', () => {
     const mockFn = jest.fn((x, y) => x + y);
     const memoizedFn = memoize(mockFn);
@@ -27,5 +26,5 @@ describe('memoize', () => {
     expect(result1).toEqual(result2);
   });
 
-  // Otros tests que consideres necesarios para asegurar el correcto funcionamiento de la función memoiza
+
 });
